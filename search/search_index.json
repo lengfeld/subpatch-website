@@ -1,1 +1,1 @@
-{"config":{"indexing":"full","lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"","text":"subpatch's wobsite cooming soon!","title":"subpatch's wobsite"},{"location":"#subpatchs-wobsite","text":"cooming soon!","title":"subpatch's wobsite"}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"subpatch's wobsite","text":"<p>cooming soon!</p>"}]}
