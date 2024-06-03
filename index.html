@@ -245,6 +245,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#subpatch-main-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      subpatch main difference
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -308,6 +317,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#subpatch-main-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      subpatch main difference
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -351,6 +369,22 @@ email <a href="mailto:stefan+subpatch@lengfeld.xyz">me</a>.</p>
 <li>Importing new versions of the subproject is possible and subpatch helps to
   rebase the local modifications.</li>
 </ul>
+<h2 id="subpatch-main-difference">subpatch main difference</h2>
+<p>subpatch is based on the concept of
+<a href="https://en.wikipedia.org/wiki/Monorepo">monorepos</a>.
+When you use subpatch the subprojects are not git repository itself. The files
+of the subprojects are added as files to the superproject. You will only have
+to deal with a single git repository.</p>
+<p>This is in contrast to other tools, e.g.</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git-submodules</a></li>
+<li><a href="https://gerrit.googlesource.com/git-repo/+/HEAD/README.md">repo</a></li>
+<li><a href="https://kas.readthedocs.io/en/latest/">kas</a></li>
+<li><a href="https://docs.zephyrproject.org/latest/develop/west/index.html">west</a></li>
+</ul>
+<p>These tools manage multi git repository management and try to combine them into
+a big superproject.  This is done on purpose. I think that only a monorepo is a
+sane and viable solution.</p>
 
 
 
