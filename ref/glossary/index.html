@@ -227,7 +227,7 @@
             
   
   <span class="md-ellipsis">
-    Tutorials
+    Explanations
   </span>
   
 
@@ -236,6 +236,109 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Explanations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exp/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exp/design-goals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Goals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exp/comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comparison to other tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
           </label>
@@ -306,9 +409,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -319,8 +422,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Reference
           </label>
@@ -385,8 +488,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#subproject" class="md-nav__link">
-    subproject
+  <a href="#subprojects" class="md-nav__link">
+    subproject(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-system-vcs" class="md-nav__link">
+    version control system (vcs)
   </a>
   
 </li>
@@ -480,8 +590,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#subproject" class="md-nav__link">
-    subproject
+  <a href="#subprojects" class="md-nav__link">
+    subproject(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-system-vcs" class="md-nav__link">
+    version control system (vcs)
   </a>
   
 </li>
@@ -504,16 +621,26 @@
 <h1 id="glossary">Glossary</h1>
 <p>This page is a glossary. More important terms are at the top.</p>
 <h2 id="superproject">superproject</h2>
-<p>The superproject is the parent project in a multi repository setup. It's often
+<p>The <em>superproject</em> is the parent project in a multi repository setup. It's often
 a git repository itself, e.g. for <code>git submodule</code>. When using subpatch the
 superproject has the configuration file <code>.subpatch</code> at its top level directory.</p>
-<h2 id="subproject">subproject</h2>
-<p>The subproject or subprojects are the external projects, often called third
+<h2 id="subprojects">subproject(s)</h2>
+<p>The <em>subproject</em> or <em>subprojects</em> are the external projects, often called third
 party dependencies, that are added to the superproject.</p>
 <p><em>Note</em>: The terms <em>super-</em> and <em>sub-</em>projects are always relative to a specific
 project setup. It might be the case that the superproject of a project (e.g. a
 C library with third party dependencies) is the subproject of another project
 (e.g. a C++ application, using the library).</p>
+<h2 id="version-control-system-vcs">version control system (vcs)</h2>
+<p>A <em>version control system</em> is a tool to track changes to a set of files and provides
+auxiliary functional. Sometimes these are also called <em>source code management</em> tools.</p>
+<p>Popular version control systems are</p>
+<ul>
+<li><a href="https://git-scm.com/">git</a></li>
+<li><a href="https://subversion.apache.org/">subversion (svn)</a></li>
+<li><a href="https://www.mercurial-scm.org/">mercurial</a></li>
+<li><a href="http://savannah.nongnu.org/projects/cvs">Concurrent Versions System (cvs)</a></li>
+</ul>
 
 
 
