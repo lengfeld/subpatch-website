@@ -428,6 +428,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ref/releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -577,8 +597,12 @@ called <code>external</code>. To add the dependency execute the commands</p>
 $ cd external
 $ subpatch add https://github.com/google/googletest
 </code></pre>
-<p>The last command will take some seconds. It downloads the git repository and
-extract the files. When it's finished it will print the message</p>
+<p>The last command takes some seconds to execute. It downloads the git repository
+and extract the files. It uses the default branch of the git repository. In
+most cases this is the <code>main</code> or the <code>master</code> branch. If you want to download
+another branch or tag, you must use an additional argument (<em>NOTE:</em> this
+argument is not implemented yet).</p>
+<p>When the command finishes it prints the message</p>
 <pre><code>Adding subproject 'googletest' was successful.
 - To inspect the changes, use `git status` and `git diff --staged`.
 - If you want to keep the changes, commit them with `git commit`.

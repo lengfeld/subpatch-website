@@ -306,12 +306,52 @@
     With pipx into your HOME directory
   </a>
   
+    <nav class="md-nav" aria-label="With pipx into your HOME directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pipx" class="md-nav__link">
+    Install pipx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-subpatch-with-pipx" class="md-nav__link">
+    Install subpatch with pipx
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#as-a-standalone-script-into-the-path" class="md-nav__link">
     As a standalone script into the PATH
   </a>
+  
+    <nav class="md-nav" aria-label="As a standalone script into the PATH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-bin-folder" class="md-nav__link">
+    Create a bin folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-and-install-subpatch" class="md-nav__link">
+    Download and install subpatch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -407,6 +447,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ref/releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -471,12 +531,52 @@
     With pipx into your HOME directory
   </a>
   
+    <nav class="md-nav" aria-label="With pipx into your HOME directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pipx" class="md-nav__link">
+    Install pipx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-subpatch-with-pipx" class="md-nav__link">
+    Install subpatch with pipx
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#as-a-standalone-script-into-the-path" class="md-nav__link">
     As a standalone script into the PATH
   </a>
+  
+    <nav class="md-nav" aria-label="As a standalone script into the PATH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-bin-folder" class="md-nav__link">
+    Create a bin folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-and-install-subpatch" class="md-nav__link">
+    Download and install subpatch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -496,8 +596,8 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>This tutorial explains who to install subpatch on your computer.</p>
-<p>Currently there are two ways to install subpatch</p>
+<p>This tutorial explains who to install subpatch on your computer. Currently
+there are two ways to install subpatch:</p>
 <ol>
 <li>With <a href="https://pipx.pypa.io/stable/">pipx</a> into your HOME directory</li>
 <li>As a standalone script into the PATH</li>
@@ -505,11 +605,97 @@
 <p><strong>NOTE</strong>: subpatch is currently in a very <em>very</em> early stage. Do not use it in
 production environments!</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>tbd</p>
+<p>To follow this tutorial you need a PC or notebook with a Linux Operating
+System installed. This tutorial will assume <a href="https://ubuntu.com/">Ubuntu</a>, but
+any current distribution should work. Also MacOS may work out of the box, but
+it's not tested for now.</p>
 <h2 id="with-pipx-into-your-home-directory">With pipx into your HOME directory</h2>
-<p>tbd</p>
+<p>The subpatch project is released on <a href="https://pypi.org/">PyPI</a>, the "Python
+Package Index". The <a href="https://pypi.org/project/subpatch/">PyPI's subpatch site</a>
+contains the project specific informations.</p>
+<h3 id="install-pipx">Install pipx</h3>
+<p>To install subpatch, you can use <a href="https://pipx.pypa.io/">pipx</a>. pipx is a tool
+to manage <a href="https://docs.python.org/3/tutorial/venv.html">python virtual
+environments</a> in your HOME
+directory.</p>
+<p>To install pipx on Ubuntu, execute</p>
+<pre><code>$ sudo apt install pipx
+</code></pre>
+<p><em>NOTE</em>: For other distributions use the distro specific package manager.</p>
+<p>To check if pipx works, you can execute the <code>list</code> command. An example:</p>
+<pre><code>$ pipx list
+nothing has been installed with pipx 😴
+</code></pre>
+<h3 id="install-subpatch-with-pipx">Install subpatch with pipx</h3>
+<p>If everything is fine, you can install the latest version of subpatch with the command</p>
+<pre><code>$ pipx install subpatch
+</code></pre>
+<p>The output of the command should look like</p>
+<pre><code>  installed package subpatch 0.1a2, installed using Python 3.10.12
+  These apps are now globally available
+    - subpatch
+done! ✨ 🌟 ✨
+</code></pre>
+<p>If some of the numbers are different, that's o.k.</p>
+<p>To test that subpatch works, you can execute the command</p>
+<pre><code>$ subpatch --version
+</code></pre>
+<p>It should print the version number of subpatch that is currently installed.</p>
+<p><strong>Congratulations</strong>, now you successfully installed subpatch. A final note: To
+get further infos and the help text, execute</p>
+<pre><code>$ subpatch --help
+</code></pre>
 <h2 id="as-a-standalone-script-into-the-path">As a standalone script into the PATH</h2>
-<p>tbd</p>
+<p>You can also install subpatch as a standalone python script into your PATH.</p>
+<h3 id="create-a-bin-folder">Create a <code>bin</code> folder</h3>
+<p>First make sure that you have a directory that is listed in your PATH. If you
+have another folder in the PATH for other scripts already, you can skip this
+step.</p>
+<p>I used a <code>bin</code> directory in the HOME folder for that. To create it, execute</p>
+<pre><code>$ mkdir ~/bin
+</code></pre>
+<p>Then this folder must be added to the environment variable PATH. This can be
+done with</p>
+<pre><code>$ echo 'export PATH=$PATH:$HOME/bin' &gt;&gt; ~/.bashrc
+</code></pre>
+<p>It adds a line at the end of the <code>~./bashrc</code> file.</p>
+<p>The change will only be active in new shells that are spawned now. So start a new shell with</p>
+<pre><code>$ bash
+</code></pre>
+<p><em>NOTE</em>: This tutorial assumes that you are using bash. If you use another
+shell, like zsh or fish, you mostly already know everything in the tutorial and
+can adapt it yourself :-)</p>
+<p>To check that the modifications of the PATH variable worked, execute</p>
+<pre><code>$ echo $PATH
+</code></pre>
+<p>It prints all folders that are scanned for executable files. The list should
+contain the <code>bin</code> folder in your HOME directory at the end.</p>
+<h3 id="download-and-install-subpatch">Download and install subpatch</h3>
+<p>The last step is to download the subpatch script and copy it into the <code>bin</code> folder.</p>
+<p>First go to the <a href="../../ref/releases/">releases page</a> and find the latest
+release. Now you can either click on the link for <em>standalone python script</em>
+and download the script with your browser. Or you copy the link and download
+the script on the commandline with</p>
+<pre><code>$ wget https://github.com/lengfeld/subpatch/releases/download/v0.1a2/subpatch
+</code></pre>
+<p>The above command is just an example. For other versions of subpatch, the URL
+looks different.</p>
+<p>After you downloaded the standalone script, you must move it to the <code>bin</code>
+directory. For example:</p>
+<pre><code>$ mv subpatch ~/bin/
+</code></pre>
+<p>The executable bit is not set, for downloaded files. You must set it manually with the command</p>
+<pre><code>$ chmod +x ~/bin/subpatch
+</code></pre>
+<p>Otherwise the shell cannot execute the script.</p>
+<p>To test that subpatch works, you can execute the command</p>
+<pre><code>$ subpatch --version
+</code></pre>
+<p>It should print the version number of subpatch that is currently installed.</p>
+<p><strong>Congratulations</strong>, now you successfully installed subpatch. A final note: To
+get further infos and the help text, execute</p>
+<pre><code>$ subpatch --help
+</code></pre>
 
 
 
