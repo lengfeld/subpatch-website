@@ -451,6 +451,33 @@
     Download and install subpatch
   </a>
   
+    <nav class="md-nav" aria-label="Download and install subpatch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-download" class="md-nav__link">
+    Manual download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-command-line" class="md-nav__link">
+    Using the command line
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-subpatch" class="md-nav__link">
+    Test subpatch
+  </a>
+  
 </li>
         
       </ul>
@@ -676,6 +703,33 @@
     Download and install subpatch
   </a>
   
+    <nav class="md-nav" aria-label="Download and install subpatch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-download" class="md-nav__link">
+    Manual download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-command-line" class="md-nav__link">
+    Using the command line
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-subpatch" class="md-nav__link">
+    Test subpatch
+  </a>
+  
 </li>
         
       </ul>
@@ -776,22 +830,30 @@ contain the <code>bin</code> folder in your HOME directory at the end.</p>
 <h3 id="download-and-install-subpatch">Download and install subpatch</h3>
 <p>The last step is to download the subpatch script and copy it into the <code>bin</code> folder.</p>
 <p>First go to the <a href="../../ref/releases/">releases page</a> and find the latest
-release. Now you can either click on the link for <em>standalone python script</em>
-and download the script with your browser. Or you copy the link and download
-the script on the commandline with</p>
-<pre><code>$ wget https://github.com/lengfeld/subpatch/releases/download/v0.1a2/subpatch
-</code></pre>
-<p>The above command is just an example. For other versions of subpatch, the URL
-looks different.</p>
-<p>After you downloaded the standalone script, you must move it to the <code>bin</code>
-directory. For example:</p>
+release. There are two options: manual download or using the command line:</p>
+<h4 id="manual-download">Manual download</h4>
+<p>Now click on the link for <em>standalone python script</em> and download the script
+with your browser.</p>
+<p>After you downloaded the standalone script into your download directory, you
+must move it to the <code>bin</code> directory. For example:</p>
 <pre><code>$ mv subpatch ~/bin/
 </code></pre>
-<p>The executable bit is not set, for downloaded files. You must set it manually with the command</p>
+<p>The executable bit is not set for downloaded files. You must manually set it
+with the command</p>
 <pre><code>$ chmod +x ~/bin/subpatch
 </code></pre>
 <p>Otherwise the shell cannot execute the script.</p>
-<p>To test that subpatch works, you can execute the command</p>
+<h4 id="using-the-command-line">Using the command line</h4>
+<p>Apart from the manual download, you can use command line tools. To download
+the script and set the executable bit, just execute:</p>
+<pre><code>$ wget https://github.com/lengfeld/subpatch/releases/download/v0.1a2/subpatch -O ~/bin/subpatch
+$ chmod +x ~/bin/subpatch
+</code></pre>
+<p>The above command is just an example. For other versions of subpatch, the
+version number in the URL looks different.</p>
+<h3 id="test-subpatch">Test subpatch</h3>
+<p>After download and installation you should test the subpatch command line tool.
+To test that it works, you can execute the command</p>
 <pre><code>$ subpatch --version
 </code></pre>
 <p>It should print the version number of subpatch that is currently installed.</p>
